@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>   
+ <title>Clicker Flicker</title> 
+     <style>
+         body{
+             background-color:black
+         }
+         audio {
+             float: right;
+             float: top;
+         }
+     </style>
+     <link href="style.css" rel ="stylesheet" type="text/css">
+    </head>
+     
+    <body>
+        <div class="topnav">
+            <a class="home" href="index.html">Home</a> 
+            <a class="games" href="page2.html">Recommended Games</a> 
+            <a class="opinions" href="page3.html">My Opinions</a>
+            <a class="media" href="page4.html">Recommended Media</a>
+        </div>
+        <h1 style="color:limegreen"> This is my first website.</h1>          
+
+        
+       <p style="color:orange"> I love Basketball.</p>
+              <img src="http://ingstadmedia.com/kdmanews/wp-content/uploads/sites/6/2019/02/Basketball.jpg"height="auto"width="284px">          
+
+        <p style="color:white">My favorite Basketball player is James Harden.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKnyMrTWDLCMwbgvUGkbf9r_efv3rzNNC0E8dqTHOHZyzITqO">
+     <p style="color:red"> My favorite super hero is Spiderman.</p>
+        <img src="https://cdn.images.express.co.uk/img/dynamic/36/285x190/1142717_1.jpg"height="auto"width="284px">    
+        
+
+        <p style=color:blue>My favorite color is blue.</p>
+        <img src="https://cdn.vox-cdn.com/thumbor/oDDL3PTeGyG8UhiH-b2NOxZAMak=/0x0:5206x3471/1200x800/filters:focal(2135x136:2967x968)/cdn.vox-cdn.com/uploads/chorus_image/image/64042139/1138217267.jpg.0.jpg"height="auto"width="284px">
+        <div class="clickerGame">
+        <h1>Clicker Flicker</h1>
+            <button class="click" onclick="incrementScore()">Click me!</button><br/>
+            <button onclick="reset()">Reset</button>
+            <h2 id="score">0</h2>
+        </div>
+        
+        <script>
+        
+        var score=0;
+            const remarks = ["Click me!", "Never stop!", "Faster!"];
+            function incrementScore(){
+                document.getElementsByTagName("button")[0].innerHTML = remarks[Math.floor(Math.random()*remarks.length)];
+                score++;
+                document.getElementById("score").innerHTML = score;
+            }
+            function reset() {
+                score = 0;
+                document.getElementById("score").innerHTML = score;
+            }
+        </script>
+    </body>        
+
+    
+</html>

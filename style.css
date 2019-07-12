@@ -1,0 +1,63 @@
+.topnav {
+    background-color: black;
+    color:white;
+    height: 60px;
+    text-align: left;
+}
+body {
+    text-align: center;
+}
+img {
+    width: 500px;
+}
+
+.games {
+    color: aqua;
+}
+.home {
+     color: white;
+ }
+.opinions {
+    color: yellow;
+}
+.media {
+    color: red;
+}
+a {
+    position: relative;
+    top: 13px;
+    font-size: 30px;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: grey;
+}
+.on {
+    background-color: grey;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clickerGame {
+    background-color: cyan;
+    text-decoration-color: black
+        
+        
+}
+button {
+    width: 500px;
+    height: 50px;
+    background-color: red;
+}
+.click {
+    background-image: url(https://banner2.kisspng.com/20180324/sfw/kisspng-emoji-index-finger-index-finger-hand-fingers-5ab5e0a5635f07.872636411521868965407.jpg);
+    background-size: 500px 500px;
+    width: 500px;
+    height: 500px;
+    font-size: 40px;
+    
+}
